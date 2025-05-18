@@ -1,0 +1,759 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "year": "2024",
+      "category": ["자동차", "안전", "교통"],
+      "name": "안전습관 데이터플랫폼 구축사업",
+      "description": "통계 서비스 컨설팅",
+      "date": "2024.06~2024.12",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kosaf.go.kr/portal/main.do",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국안전기술원"
+      }
+    },
+    {
+      "id": 3,
+      "year": "2024",
+      "category": ["교통", "안전"],
+      "name": "차세대 에너지 관리 시스템 연구",
+      "description": "AI 기반 에너지 효율 최적화 연구",
+      "date": "2024.01~2025.05",
+      "thumbnail": "project_i_se_co_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.energy.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국에너지공단"
+      }
+    },
+    {
+      "id": 6,
+      "year": "2024",
+      "category": ["환경"],
+      "name": "미세먼지 예측 시스템 고도화",
+      "description": "대기질 예측 정확도 향상 연구",
+      "date": "2024.03~2024.10",
+      "thumbnail": "project_kidi_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.keiti.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국환경정책·평가연구원"
+      }
+    },
+    {
+      "id": 9,
+      "year": "2024",
+      "category": ["농업"],
+      "name": "스마트 농업 플랫폼 개발",
+      "description": "작물 생육 환경 모니터링 및 제어 시스템 구축",
+      "date": "2024.02~2024.09",
+      "thumbnail": "project_know_tour_go_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.rda.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "농촌진흥청"
+      }
+    },
+    {
+      "id": 12,
+      "year": "2024",
+      "category": ["문화"],
+      "name": "문화 유산 디지털 복원 프로젝트",
+      "description": "3D 모델링 기반 문화 유산 복원 및 전시 시스템 구축",
+      "date": "2024.04~2024.11",
+      "thumbnail": "project_stat_mcst_go_kr_main.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.nrich.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국립문화재연구원"
+      }
+    },
+    {
+      "id": 15,
+      "year": "2024",
+      "category": ["제약"],
+      "name": "인공지능 기반 신약 개발",
+      "description": "AI 활용 신규 약물 후보 물질 발굴 연구",
+      "date": "2024.07~2025.02",
+      "thumbnail": "project_stat_mcst_go_kr_subject01.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mfds.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "식품의약품안전처"
+      }
+    },
+    {
+      "id": 18,
+      "year": "2024",
+      "category": ["에너지"],
+      "name": "수소 에너지 생산 기술 연구",
+      "description": "친환경 수소 생산 기술 개발",
+      "date": "2024.01~2024.12",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.motie.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "산업통상자원부"
+      }
+    },
+    {
+      "id": 21,
+      "year": "2024",
+      "category": ["로봇"],
+      "name": "로봇 기반 스마트 물류 시스템 개발",
+      "description": "물류 창고 자동화 및 효율화 시스템 구축",
+      "date": "2024.03~2024.10",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.molit.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국토교통부"
+      }
+    },
+    {
+      "id": 24,
+      "year": "2024",
+      "category": ["교육"],
+      "name": "원격 교육 콘텐츠 개발",
+      "description": "실감형 교육 콘텐츠 제작",
+      "date": "2024.02~2024.09",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.moe.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "교육부"
+      }
+    },
+    {
+      "id": 27,
+      "year": "2024",
+      "category": ["통신"],
+      "name": "차세대 네트워크 기술 연구",
+      "description": "양자 통신 기술 기반 보안 강화 연구",
+      "date": "2024.04~2024.11",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.msit.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "과학기술정보통신부"
+      }
+    },
+    {
+      "id": 30,
+      "year": "2024",
+      "category": ["환경"],
+      "name": "기후 변화 예측 모델 개발",
+      "description": "정확도 높은 장기 기후 변화 예측 모델 개발",
+      "date": "2024.07~2025.02",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kma.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "기상청"
+      }
+    },
+    {
+      "id": 33,
+      "year": "2024",
+      "category": ["농업"],
+      "name": "스마트 축산 기술 개발",
+      "description": "가축 생체 데이터 기반 건강 관리 시스템 개발",
+      "date": "2024.01~2024.12",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.nias.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국립축산과학원"
+      }
+    },
+    {
+      "id": 36,
+      "year": "2024",
+      "category": ["문화"],
+      "name": "인공지능 기반 문화재 분석 시스템 개발",
+      "description": "AI 활용 문화재 손상 분석 및 보존 처리 기술 개발",
+      "date": "2024.03~2024.10",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.gangnam.go.kr/index.htm",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "강남구청"
+      }
+    },
+    {
+      "id": 39,
+      "year": "2024",
+      "category": ["의료"],
+      "name": "개인 맞춤형 건강 관리 플랫폼 개발",
+      "description": "AI 기반 생활 습관 개선 및 질병 예측 서비스 개발",
+      "date": "2024.02~2024.09",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.hira.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "건강보험심사평가원"
+      }
+    },
+    {
+      "id": 2,
+      "year": "2023",
+      "category": ["자동화"],
+      "name": "스마트 팩토리 구축 지원",
+      "description": "제조 공정 자동화 시스템 개발",
+      "date": "2023.03~2023.11",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.smes.go.kr/smartfactory/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "중소벤처기업부"
+      }
+    },
+    {
+      "id": 5,
+      "year": "2023",
+      "category": ["의료"],
+      "name": "클라우드 기반 의료 정보 시스템 구축",
+      "description": "환자 데이터 통합 관리 시스템 개발",
+      "date": "2023.09~2024.08",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.khidi.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국보건산업진흥원"
+      }
+    },
+    {
+      "id": 7,
+      "year": "2023",
+      "category": ["로봇"],
+      "name": "자율 주행 로봇 개발",
+      "description": "물류 운송용 자율 로봇 시제품 제작",
+      "date": "2023.05~2024.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kiat.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국산업기술진흥원"
+      }
+    },
+    {
+      "id": 10,
+      "year": "2023",
+      "category": ["교육"],
+      "name": "온라인 교육 플랫폼 고도화",
+      "description": "맞춤형 학습 콘텐츠 제공 시스템 개발",
+      "date": "2023.07~2024.01",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.keris.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국교육학술정보원"
+      }
+    },
+    {
+      "id": 13,
+      "year": "2023",
+      "category": ["통신"],
+      "name": "차세대 통신망 기술 개발",
+      "description": "6G 통신 핵심 기술 연구",
+      "date": "2023.01~2024.06",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.etri.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국전자통신연구원"
+      }
+    },
+    {
+      "id": 16,
+      "year": "2023",
+      "category": ["안전"],
+      "name": "재난 안전 관리 시스템 고도화",
+      "description": "재난 예측 및 대응 시스템 개선",
+      "date": "2023.03~2023.12",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mois.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "행정안전부"
+      }
+    },
+    {
+      "id": 19,
+      "year": "2023",
+      "category": ["의료"],
+      "name": "스마트 헬스케어 플랫폼 개발",
+      "description": "개인 맞춤형 건강 관리 서비스 제공 플랫폼 구축",
+      "date": "2023.06~2024.05",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mohw.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "보건복지부"
+      }
+    },
+    {
+      "id": 22,
+      "year": "2023",
+      "category": ["보안"],
+      "name": "사이버 보안 관제 시스템 구축",
+      "description": "실시간 사이버 위협 탐지 및 대응 시스템 개발",
+      "date": "2023.09~2024.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.nsr.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국가정보원"
+      }
+    },
+    {
+      "id": 25,
+      "year": "2023",
+      "category": ["해양"],
+      "name": "해양 생태계 보전 연구",
+      "description": "기후 변화에 따른 해양 생태계 변화 연구",
+      "date": "2023.07~2024.01",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mof.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "해양수산부"
+      }
+    },
+    {
+      "id": 28,
+      "year": "2023",
+      "category": ["건설"],
+      "name": "스마트 건설 기술 개발",
+      "description": "건설 현장 자동화 및 안전 관리 시스템 개발",
+      "date": "2023.01~2024.06",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.molit.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국토교통부"
+      }
+    },
+    {
+      "id": 31,
+      "year": "2023",
+      "category": ["자동화"],
+      "name": "지능형 제조 시스템 구축",
+      "description": "AI 기반 생산 공정 최적화 시스템 개발",
+      "date": "2023.03~2023.12",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kitech.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국생산기술연구원"
+      }
+    },
+    {
+      "id": 34,
+      "year": "2023",
+      "category": ["교육"],
+      "name": "실감형 교육 콘텐츠 플랫폼 개발",
+      "description": "VR/AR 기반 교육 콘텐츠 제공 플랫폼 구축",
+      "date": "2023.06~2024.05",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kedi.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국교육개발원"
+      }
+    },
+    {
+      "id": 37,
+      "year": "2023",
+      "category": ["통신"],
+      "name": "초고속 무선 통신 기술 상용화 연구",
+      "description": "테라헤르츠파 기반 통신 시스템 개발",
+      "date": "2023.09~2024.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.tta.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국정보통신기술협회"
+      }
+    },
+    {
+      "id": 40,
+      "year": "2023",
+      "category": ["환경"],
+      "name": "탄소 중립 사회 실현을 위한 정책 연구",
+      "description": "온실가스 감축 목표 달성 전략 연구",
+      "date": "2023.07~2024.01",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kcen.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국기후·환경네트워크"
+      }
+    },
+    {
+      "id": 4,
+      "year": "2022",
+      "category": ["교통"],
+      "name": "지능형 교통 시스템 개발",
+      "description": "실시간 교통 정보 분석 및 제공 플랫폼 구축",
+      "date": "2022.07~2023.02",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kotsa.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국교통안전공단"
+      }
+    },
+    {
+      "id": 8,
+      "year": "2022",
+      "category": ["금융"],
+      "name": "빅데이터 기반 금융 사기 탐지 시스템 구축",
+      "description": "이상 거래 패턴 분석 및 예측 모델 개발",
+      "date": "2022.11~2023.06",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.fsc.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "금융위원회"
+      }
+    },
+    {
+      "id": 11,
+      "year": "2022",
+      "category": ["해양"],
+      "name": "해양 환경 오염 감시 시스템 구축",
+      "description": "실시간 해양 오염 물질 탐지 및 추적 시스템 개발",
+      "date": "2022.09~2023.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kio.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국해양과학기술원"
+      }
+    },
+    {
+      "id": 14,
+      "year": "2022",
+      "category": ["도시"],
+      "name": "스마트 시티 플랫폼 구축",
+      "description": "도시 데이터 통합 관리 및 서비스 제공 플랫폼 개발",
+      "date": "2022.05~2023.10",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.korea.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "국토교통부"
+      }
+    },
+    {
+      "id": 17,
+      "year": "2022",
+      "category": ["보안"],
+      "name": "블록체인 기반 투표 시스템 개발",
+      "description": "투표 조작 방지 및 투명성 확보 시스템 구축",
+      "date": "2022.10~2023.05",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.nec.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "중앙선거관리위원회"
+      }
+    },
+    {
+      "id": 20,
+      "year": "2022",
+      "category": ["환경"],
+      "name": "지능형 물 관리 시스템 구축",
+      "description": "수자원 관리 효율성 향상 시스템 개발",
+      "date": "2022.08~2023.03",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.me.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "환경부"
+      }
+    },
+    {
+      "id": 23,
+      "year": "2022",
+      "category": ["농업"],
+      "name": "정밀 농업 기술 개발",
+      "description": "데이터 기반 작물 재배 관리 시스템 개발",
+      "date": "2022.11~2023.06",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mafra.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "농림축산식품부"
+      }
+    },
+    {
+      "id": 26,
+      "year": "2022",
+      "category": ["문화"],
+      "name": "디지털 문화 콘텐츠 개발",
+      "description": "실감형 문화 체험 콘텐츠 제작",
+      "date": "2022.09~2023.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.mcst.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "문화체육관광부"
+      }
+    },
+    {
+      "id": 29,
+      "year": "2022",
+      "category": ["의료"],
+      "name": "맞춤형 의료 서비스 개발",
+      "description": "유전체 정보 기반 맞춤형 치료법 개발",
+      "date": "2022.05~2023.10",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.cdc.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "질병관리청"
+      }
+    },
+    {
+      "id": 32,
+      "year": "2022",
+      "category": ["보안"],
+      "name": "생체 인식 기반 보안 시스템 개발",
+      "description": "얼굴 인식 기반 출입 통제 시스템 개발",
+      "date": "2022.10~2023.05",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.police.go.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "경찰청"
+      }
+    },
+    {
+      "id": 35,
+      "year": "2022",
+      "category": ["해양"],
+      "name": "해양 자원 탐사 기술 개발",
+      "description": "심해 희귀 광물 탐사 및 채굴 기술 연구",
+      "date": "2022.08~2023.03",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kiost.ac/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국해양과학기술원 부설 극지연구소"
+      }
+    },
+    {
+      "id": 38,
+      "year": "2022",
+      "category": ["도시"],
+      "name": "지속 가능한 도시 개발 모델 연구",
+      "description": "친환경 스마트 도시 조성 방안 연구",
+      "date": "2022.11~2023.06",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.lh.or.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국토지주택공사"
+      }
+    },
+    {
+      "id": 41,
+      "year": "2022",
+      "category": ["농업"],
+      "name": "첨단 로봇 기술 기반 스마트 팜 구축",
+      "description": "로봇 활용 자동화된 농작업 시스템 개발",
+      "date": "2022.09~2023.04",
+      "thumbnail": "project_carhistory_or_kr.png",
+      "dialogThumbnail": "dialog_thumbnail_sample.png",
+      "link": "https://www.kari.re.kr/",
+      "client": {
+        "logo": "STC_CI_Logo.svg",
+        "name": "한국항공우주연구원"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "한국안전기술원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.kosaf.go.kr/portal/main.do"
+    },
+    {
+      "id": 2,
+      "name": "한국에너지공단",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.energy.or.kr/"
+    },
+    {
+      "id": 3,
+      "name": "한국환경정책·평가연구원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.keiti.re.kr/"
+    },
+    {
+      "id": 4,
+      "name": "농촌진흥청",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.rda.go.kr/"
+    },
+    {
+      "id": 5,
+      "name": "국립문화재연구원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.nrich.go.kr/"
+    },
+    {
+      "id": 6,
+      "name": "식품의약품안전처",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.mfds.go.kr/"
+    },
+    {
+      "id": 7,
+      "name": "산업통상자원부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.motie.go.kr/"
+    },
+    {
+      "id": 8,
+      "name": "국토교통부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.molit.go.kr/"
+    },
+    {
+      "id": 9,
+      "name": "교육부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.moe.go.kr/"
+    },
+    {
+      "id": 10,
+      "name": "과학기술정보통신부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.msit.go.kr/"
+    },
+    {
+      "id": 11,
+      "name": "기상청",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.kma.go.kr/"
+    },
+    {
+      "id": 12,
+      "name": "국립축산과학원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.nias.go.kr/"
+    },
+    {
+      "id": 13,
+      "name": "강남구청",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.gangnam.go.kr/index.htm"
+    },
+    {
+      "id": 14,
+      "name": "건강보험심사평가원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.hira.or.kr/"
+    },
+    {
+      "id": 15,
+      "name": "중소벤처기업부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.smes.go.kr/"
+    },
+    {
+      "id": 16,
+      "name": "한국보건산업진흥원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.khidi.or.kr/"
+    },
+    {
+      "id": 17,
+      "name": "한국산업기술진흥원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.kiat.or.kr/"
+    },
+    {
+      "id": 18,
+      "name": "한국교육학술정보원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.keris.or.kr/"
+    },
+    {
+      "id": 19,
+      "name": "한국전자통신연구원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.etri.re.kr/"
+    },
+    {
+      "id": 20,
+      "name": "행정안전부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.mois.go.kr/"
+    },
+    {
+      "id": 21,
+      "name": "보건복지부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.mohw.go.kr/"
+    },
+    {
+      "id": 22,
+      "name": "국가정보원",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.nsr.go.kr/"
+    },
+    {
+      "id": 23,
+      "name": "해양수산부",
+      "logo": "STC_CI_Logo.svg",
+      "link": "https://www.mof.go.kr/"
+    }
+  ]
+}

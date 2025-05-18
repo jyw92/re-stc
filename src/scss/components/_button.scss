@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+.button{
+  border: 1px solid #E2E2E2;
+  @include flexControl($align: center, $justify: center);
+  height: rem(53);
+  padding: rem(18) rem(24);
+  gap: rem(10);
+  color: #3E3E3E;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: rem(10);
+  background: #FFF;
+  &.more--button{
+    margin-inline: auto;
+  }
+  &.contact--button{
+    position: absolute;
+    right:rem(30);
+    bottom:rem(30);
+  }
+}

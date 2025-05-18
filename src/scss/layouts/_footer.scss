@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+
+footer {
+  width: 100vw;
+  height: rem(400);
+  background-color: #2b4793;
+  color: #fff;
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: rem(50) rem(55);
+    .footer--area--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      .stc--abbreviation {
+        font-size: rem(75);
+        font-weight: 700;
+        line-height: 0.8;
+      }
+      .stc--copyright--area {
+        p {
+          font-weight: 400;
+          line-height: 1.2;
+        }
+        .stc--explanation {
+          font-size: rem(15);
+        }
+        .stc--copyright {
+          font-size: rem(12);
+          margin-top: rem(5);
+        }
+      }
+    }
+    .footer--area--right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .footer--logo {
+        text-align: right;
+      }
+      .stc--location {
+        font-size: rem(16);
+        .stc--location--tel {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: rem(10);
+          gap: rem(5);
+        }
+      }
+    }
+  }
+}

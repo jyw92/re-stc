@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.container{
+  padding:rem(15) rem(55) rem(100);
+}
+.section--title{
+  @include flexControl($direction:column, $align: center, $justify: center);
+  gap: rem(10);
+  margin-block-start: rem(120);
+  h2{
+    color: #1F1D1D;
+    font-size: rem(34);
+    font-weight: 700;
+  }
+  span{
+    color: #333;
+    font-size: rem(20);
+  }
+} 

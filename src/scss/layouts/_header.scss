@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+header{
+  @include flexControl($align: center, $justify: space-between);
+  padding-inline: 55px;
+  height:rem(100);
+  &::after{
+    content:'';
+  }
+  menu{
+    display: flex; 
+    gap: rem(65);
+    font-size:rem(24);
+    font-weight: 400;
+  }
+}
+

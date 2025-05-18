@@ -1,0 +1,66 @@
+@use '../../abstracts/' as *;
+
+.reference{
+  // margin-block:rem(65) rem(130);
+  // padding-block-start:rem(55);
+  &--wrapper{
+    @extend %inner1400;
+    // margin-block: rem(55);
+  }
+  
+  &--tabs{
+    @include flexControl($align: center, $justify: center);
+    color: #999;
+    font-size: rem(16);
+    gap: rem(20);
+  }
+  &--tab{
+    padding: rem(10) rem(22);
+    border-radius: rem(15);
+    &.--active{
+      background: #E9F6FF;
+      color: var(--blue-primary, #006BB9);
+    }
+  }
+  
+  &--list{
+    margin-bottom: rem(55);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(35);
+    margin-block-start: rem(55);
+    &--item{
+      @include flexControl($direction:column, $align: center, $justify: flex-start);
+      gap: rem(20);
+      height: rem(347);
+      padding:rem(10) rem(10) 0;
+      border: 1px solid #E4E4E4;
+      border-radius: 15px;
+      .thumbnail{
+        width:100%;
+        border-radius: 15px;
+      }
+      .client--logo{
+        width:auto;
+        height:50px;
+      }
+      .project--name{
+        color: #272727;
+        text-align: center;
+        font-size: rem(18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &:hover{
+        box-shadow: 0px 0px 0px 4px #296BFF;
+        .project--name{
+          color: #296BFF;
+          font-weight: 700;
+        }
+      }
+
+    }
+  }
+}

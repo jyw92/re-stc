@@ -1,0 +1,5 @@
+- 전체 문서 정렬: Shift + Alt + F
+- 선택한 코드 정렬: Ctrl + K, Ctrl + F
+
+리베하얀 멤버쉽
+https://rebehayan.notion.site/Youtube-Membership-00504cdde7ae42179ec717b9b5ceef5a

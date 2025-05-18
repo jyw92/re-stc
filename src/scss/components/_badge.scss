@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.badge {
+  @include flexControl($align: center, $justify: center);
+  border-radius: 15px;
+  background: #dfdfdf;
+  padding: rem(4) rem(10);
+}
