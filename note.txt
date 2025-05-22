@@ -3,3 +3,10 @@
 
 리베하얀 멤버쉽
 https://rebehayan.notion.site/Youtube-Membership-00504cdde7ae42179ec717b9b5ceef5a
+
+
+
+grid-template-areas: 
+    "d b b"
+    "c c a";
+https://codepen.io/chriscoyier/pen/jEEdewP
