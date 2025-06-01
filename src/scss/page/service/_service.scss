@@ -1,0 +1,98 @@
+
+@use '../../abstracts/' as *;
+$currentBgColor:(#1B2F63, #FFFFFF, #2F2F2F, #E7E7E7);
+
+.service--list{
+  display: flex;
+  flex-direction: column;
+  gap: rem(100);
+  font-size: rem(16);
+  padding-block: rem(100);
+
+  @for $i from 1 through length($currentBgColor) {
+    &--item:nth-child(#{$i}) {
+      background-color: nth($currentBgColor, $i);
+    }
+  }  
+
+  &--item{
+    position: relative;
+    width:100%;
+    height:rem(542);
+    display: flex;
+    justify-content: space-between;
+    border-radius:rem(15);
+    border: 1px solid #D1D1D1;
+    &:nth-child(odd){
+      color: #fff;
+    }
+    &:nth-child(even){
+      color: #333;
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(odd) &__content{
+      &--header{
+        transform: translateX(rem(-143));
+      }
+    }
+
+    &:nth-child(even) &__content{
+      &--header{
+        transform: translateX(rem(143));
+        flex-direction: row-reverse;
+      }
+      &--body{
+        text-align: right;
+      }
+    }
+    
+
+    &:nth-child(even) &__thumbnail {
+      left: rem(-150);
+    }
+    &:nth-child(odd) &__thumbnail {
+      right: rem(-150);
+    }
+    &__content{
+      display: flex;
+      flex-direction: column;
+      gap: rem(50);
+      padding:rem(60) rem(200);
+
+      &--header{
+        display: flex;
+        align-items: flex-end;
+        gap: rem(20);
+        
+        .current{
+          font-size: rem(100);
+          font-weight: 900;
+          opacity: 0.3;
+          line-height: 0.8;
+        }
+        .title{
+          font-size: rem(34);
+        }
+      }
+
+      &--body{
+        font-size: rem(13);
+        font-weight: 300;
+        .info{
+          line-height: 1.5;
+        }
+      }
+
+    }
+    &__thumbnail{
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      border-radius: rem(15) ;
+    }
+  }
+
+    
+
+}

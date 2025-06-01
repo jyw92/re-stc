@@ -1,4 +1,6 @@
 @use './vendors/' as *;
 @use './layouts/' as *;
-@use './page/' as *;
 @use './components/' as *;
+@use './page/main/' as *;
+@use './page/reference/' as *;
+@use './page/service/'as *;

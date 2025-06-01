@@ -539,7 +539,7 @@
     overflow-x: hidden;
   }
 }
-.reference--wrapper {
+.section--inner {
   width: 1400px;
   margin: 0 auto;
 }
@@ -643,106 +643,6 @@ header menu {
   font-size: 2rem;
 }
 
-.reference--tabs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  font-size: 1.6rem;
-  gap: 2rem;
-}
-.reference--tab {
-  padding: 1rem 2.2rem;
-  border-radius: 1.5rem;
-}
-.reference--tab.--active {
-  background: #E9F6FF;
-  color: var(--blue-primary, #006BB9);
-}
-.reference--list {
-  margin-bottom: 5.5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3.5rem;
-  margin-block-start: 5.5rem;
-}
-.reference--list--item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  height: 34.7rem;
-  padding: 1rem 1rem 0;
-  border: 1px solid #E4E4E4;
-  border-radius: 15px;
-}
-.reference--list--item .thumbnail {
-  width: 100%;
-  border-radius: 15px;
-}
-.reference--list--item .client--logo {
-  width: auto;
-  height: 50px;
-}
-.reference--list--item .project--name {
-  color: #272727;
-  text-align: center;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.reference--list--item:hover {
-  box-shadow: 0px 0px 0px 4px #296BFF;
-}
-.reference--list--item:hover .project--name {
-  color: #296BFF;
-  font-weight: 700;
-}
-
-.clients--list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 5rem;
-  gap: 5rem;
-  width: 100%;
-  overflow: hidden;
-}
-.clients--list:hover .clients--list--item {
-  animation-play-state: paused;
-}
-.clients--list--item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  min-width: 10rem;
-  animation: animate 25s linear infinite;
-}
-.clients--list--item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes animate {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1800px, 0, 0);
-  }
-}
 :root {
   --model-width: 80vw;
   --modal-height: 80vh;
@@ -899,6 +799,191 @@ dialog .dialog--content--right .dialog--content--body .td--name.link {
   border-radius: 15px;
   background: #dfdfdf;
   padding: 0.4rem 1rem;
+}
+
+.clients--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5rem;
+  gap: 5rem;
+  width: 100%;
+  overflow: hidden;
+}
+.clients--list:hover .clients--list--item {
+  animation-play-state: paused;
+}
+.clients--list--item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 10rem;
+  animation: animate 25s linear infinite;
+}
+.clients--list--item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+}
+.reference--tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+.reference--tab {
+  padding: 1rem 2.2rem;
+  border-radius: 1.5rem;
+}
+.reference--tab.--active {
+  background: #E9F6FF;
+  color: var(--blue-primary, #006BB9);
+}
+.reference--list {
+  margin-bottom: 5.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.5rem;
+  margin-block-start: 5.5rem;
+}
+.reference--list--item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  height: 34.7rem;
+  padding: 1rem 1rem 0;
+  border: 1px solid #E4E4E4;
+  border-radius: 15px;
+}
+.reference--list--item .thumbnail {
+  width: 100%;
+  border-radius: 15px;
+}
+.reference--list--item .client--logo {
+  width: auto;
+  height: 50px;
+}
+.reference--list--item .project--name {
+  color: #272727;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.reference--list--item:hover {
+  box-shadow: 0px 0px 0px 4px #296BFF;
+}
+.reference--list--item:hover .project--name {
+  color: #296BFF;
+  font-weight: 700;
+}
+
+.service--list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  font-size: 1.6rem;
+  padding-block: 10rem;
+}
+.service--list--item:nth-child(1) {
+  background-color: #1B2F63;
+}
+.service--list--item:nth-child(2) {
+  background-color: #FFFFFF;
+}
+.service--list--item:nth-child(3) {
+  background-color: #2F2F2F;
+}
+.service--list--item:nth-child(4) {
+  background-color: #E7E7E7;
+}
+.service--list--item {
+  position: relative;
+  width: 100%;
+  height: 54.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  border: 1px solid #D1D1D1;
+}
+.service--list--item:nth-child(odd) {
+  color: #fff;
+}
+.service--list--item:nth-child(even) {
+  color: #333;
+  flex-direction: row-reverse;
+}
+.service--list--item:nth-child(odd) .service--list--item__content--header {
+  transform: translateX(-14.3rem);
+}
+.service--list--item:nth-child(even) .service--list--item__content--header {
+  transform: translateX(14.3rem);
+  flex-direction: row-reverse;
+}
+.service--list--item:nth-child(even) .service--list--item__content--body {
+  text-align: right;
+}
+.service--list--item:nth-child(even) .service--list--item__thumbnail {
+  left: -15rem;
+}
+.service--list--item:nth-child(odd) .service--list--item__thumbnail {
+  right: -15rem;
+}
+.service--list--item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 6rem 20rem;
+}
+.service--list--item__content--header {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.service--list--item__content--header .current {
+  font-size: 10rem;
+  font-weight: 900;
+  opacity: 0.3;
+  line-height: 0.8;
+}
+.service--list--item__content--header .title {
+  font-size: 3.4rem;
+}
+.service--list--item__content--body {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.service--list--item__content--body .info {
+  line-height: 1.5;
+}
+.service--list--item__thumbnail {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
