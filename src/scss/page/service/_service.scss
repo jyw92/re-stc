@@ -5,9 +5,9 @@ $currentBgColor:(#1B2F63, #FFFFFF, #2F2F2F, #E7E7E7);
 .service--list{
   display: flex;
   flex-direction: column;
-  gap: rem(100);
+  gap: rem(200);
   font-size: rem(16);
-  padding-block: rem(100);
+  padding-block: rem(200);
 
   @for $i from 1 through length($currentBgColor) {
     &--item:nth-child(#{$i}) {
@@ -91,7 +91,5 @@ $currentBgColor:(#1B2F63, #FFFFFF, #2F2F2F, #E7E7E7);
       border-radius: rem(15) ;
     }
   }
-
-    
 
 }

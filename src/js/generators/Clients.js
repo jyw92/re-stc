@@ -1,54 +1,78 @@
 import { fetchData } from '../utils/fetchData.js';
 
 const Clients = async () => {
-  const data = await fetchData('clients');
- 
-  const DOM = {
-    clientsList: document.querySelector('.clients--list'),
+  let data = [];
+
+  try {
+    const fetched = await fetchData('clients');
+    if (!Array.isArray(fetched)) throw new Error('Invalid client data');
+    data = fetched;
+  } catch (error) {
+    console.error('Clients component: failed to fetch client data →', error);
+    return;
   }
-  const { clientsList } = DOM;
+
+  const clientsList = document.querySelector('.clients--list');
   if (!clientsList) {
-    console.error(`Clients component: target element not found`);
+    console.error('Clients component: .clients--list not found in DOM');
     return;
   }
 
   const template = (item) => {
-    const {id, name, logo, link} = item;
+    const { id, name, logo, link } = item;
+    if (!id || !name || !logo || !link) return '';
     return /* html */ `
-      <a href="${link}" class="clients--list--item" data-id="${id}"><img src="/src/images/common/${logo}" alt="${name}"/></a>
-    `
-  }
-  
-  // 원본 아이템 추가
+      <a href="${link}" class="clients--list--item" data-id="${id}">
+        <img src="/src/images/common/${logo}" alt="${name}" />
+      </a>
+    `;
+  };
+
+  // 안전하게 DOM에 삽입
   data.forEach((item) => {
-    clientsList.insertAdjacentHTML('beforeend', template(item));  
+    const html = template(item);
+    if (html) clientsList.insertAdjacentHTML('beforeend', html);
   });
-  
-  // 무한 스크롤을 위한 아이템 복제 및 추가
+
   const createInfiniteScroll = () => {
-    // 모든 아이템 가져오기
     const items = clientsList.querySelectorAll('.clients--list--item');
-    
-    // 아이템이 없으면 종료
-    if (items.length === 0) return;
-    
-    // 모든 아이템 복제하여 추가
-    items.forEach(item => {
+
+    if (items.length === 0) {
+      console.warn('Clients component: no items to clone for infinite scroll');
+      return;
+    }
+
+    // 중복 클론 방지
+    const alreadyCloned = clientsList.dataset.cloned === 'true';
+    if (alreadyCloned) return;
+
+    items.forEach((item) => {
       const clone = item.cloneNode(true);
       clientsList.appendChild(clone);
     });
-    
-    // 애니메이션 거리 계산 및 CSS 변수 설정
-    const totalWidth = Array.from(items).reduce((width, item) => {
-      return width + item.offsetWidth;
-    }, 0);
-    
-    // CSS 변수로 애니메이션 거리 설정
-    document.documentElement.style.setProperty('--scroll-width', `${-totalWidth}px`);
+
+    clientsList.dataset.cloned = 'true'; // 마킹
+
+    // 모든 이미지의 로딩 완료 후 너비 측정
+    const images = clientsList.querySelectorAll('img');
+    const loadPromises = Array.from(images).map((img) => {
+      if (img.complete) return Promise.resolve();
+      return new Promise((resolve) => {
+        img.onload = img.onerror = resolve;
+      });
+    });
+
+    Promise.all(loadPromises).then(() => {
+      const totalWidth = Array.from(clientsList.children).reduce(
+        (width, item) => width + item.offsetWidth,
+        0
+      );
+      document.documentElement.style.setProperty('--scroll-width', `${-totalWidth}px`);
+    });
   };
-  
-  // 이미지가 로드된 후 무한 스크롤 설정
+
+  // 이미지 또는 DOM 렌더 완료 후 실행
   window.addEventListener('load', createInfiniteScroll);
-}
+};
 
 export default Clients;

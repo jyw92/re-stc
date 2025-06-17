@@ -27,6 +27,20 @@
   transform: translate(-50%, -50%);
 }
 
+// position center -X
+@mixin posCenterX($pos:absolute) {
+  position: $pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// position center -Y
+@mixin posCenterY($pos:absolute) {
+  position: $pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 //Overlay
 //Ex: @include overlay(#000000, 0.2)
 @mixin overlay($color, $opacity) {

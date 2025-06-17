@@ -3,17 +3,7 @@ import Tab from '../components/Tab.js';
 import Dialog from '../components/Dialog.js';
 
 const Reference = async () => {
-  let data = [];
-
-  try {
-    const fetched = await fetchData('projects');
-    if (!Array.isArray(fetched)) throw new Error('Invalid project data');
-    data = fetched;
-  } catch (error) {
-    console.error('Failed to fetch projects:', error);
-    return;
-  }
-
+  const data = await fetchData('projects');
   const allProjects = [...data];
   let filteredList = [...allProjects];
   const years = [];
@@ -60,36 +50,39 @@ const Reference = async () => {
     referenceTabList: document.querySelector('.reference--list'),
     loadMoreButton: document.querySelector('.more--button'),
   };
-
   const { referenceTabs, referenceTabList, loadMoreButton } = DOM;
 
   if (!referenceTabs || !referenceTabList || !loadMoreButton) {
-    console.error('Reference component: one or more DOM elements not found');
+    console.error(`Reference component: target element not found`);
     return;
   }
 
   allProjects.forEach((item) => {
-    if (item.year) years.push(item.year);
+    years.push(item.year);
   });
 
   years.unshift('전체');
   const uniqueYears = [...new Set(years)];
 
-  const templateYear = (name) => `<button class="reference--tab" data-year="${name}">${name}</button>`;
+  const templateYear = (name) => {
+    return /* html */ `<button class="reference--tab" data-year="${name}">${name}</button>`;
+  };
 
   const templateList = (item) => {
-    const { name, thumbnail, client, category, date, link, description, dialogThumbnail } = item;
-    if (!name || !thumbnail || !client || !client.logo) return '';
-    return `
-      <button type="button" class="reference--list--item"
+    const { name, thumbnail, client, category, date, link, description, dialogThumbnail} = item;
+    return /* html */ `
+      <button 
+        type="button" 
+        class="reference--list--item" 
         data-name="${name}" 
-        data-date="${date || ''}" 
-        data-link="${link || ''}" 
-        data-description="${description || ''}" 
-        data-category="${category || ''}" 
-        data-dialog-thumbnail="${dialogThumbnail || ''}">
+        data-date="${date}" 
+        data-link="${link}" 
+        data-description="${description}" 
+        data-category="${category}" 
+        data-dialog-thumbnail="${dialogThumbnail}"
+      >
         <img src="/src/images/projects/${thumbnail}" alt="${name}" class="thumbnail" />
-        <img src="/src/images/common/${client.logo}" alt="${client.name || 'client'}" class="client--logo" />
+        <img src="/src/images/common/${client.logo}" alt="${client.name}" class="client--logo" />
         <p class="project--name">${name}</p>
       </button>`;
   };
@@ -101,56 +94,77 @@ const Reference = async () => {
   const updatePageInfo = () => {
     const page = Math.ceil(currentIndex / itemsPerPage);
     const totalPages = Math.ceil(filteredList.length / itemsPerPage);
-    loadMoreButton.innerHTML = `
+    loadMoreButton.innerHTML = /* html */ `
       더보기 (${page} / ${totalPages}) ${icons.more}
     `;
-    loadMoreButton.dataset.category = currentCategory || '전체';
+    loadMoreButton.dataset.category = currentCategory === '전체' ? '전체' : currentCategory;
   };
 
   const renderList = () => {
     const nextItems = filteredList.slice(currentIndex, currentIndex + itemsPerPage);
     nextItems.forEach((item) => {
-      const html = templateList(item);
-      if (html) referenceTabList.insertAdjacentHTML('beforeend', html);
+      referenceTabList.insertAdjacentHTML('beforeend', templateList(item));
     });
     currentIndex += itemsPerPage;
     updatePageInfo();
-
-    loadMoreButton.style.display = currentIndex >= filteredList.length ? 'none' : 'flex';
+    if (currentIndex >= filteredList.length) {
+      loadMoreButton.style.display = 'none';
+    } else {
+      loadMoreButton.style.display = 'flex';
+    }
   };
 
   const filterProjects = (year) => {
     referenceTabList.innerHTML = '';
     currentIndex = 0;
     currentCategory = year;
-
-    filteredList = year === '전체'
-      ? [...allProjects]
-      : allProjects.filter((project) => project.year === year);
-
+    if (year === '전체') {
+      filteredList = [...allProjects];
+    } else {
+      filteredList = allProjects.filter((project) => project.year === year);
+    }
     renderList();
   };
 
-  const dialogEvnetHandler = () => {
+  // 초기 렌더링 (전체 데이터)
+  filterProjects('전체');
+
+  // 탭 클릭 이벤트
+  referenceTabs.addEventListener('click', (e) => {
+    if (e.target.classList.contains('reference--tab')) {
+      const selectedYear = e.target.dataset.year;
+      filterProjects(selectedYear);
+    }
+    dialogEvnetHandler();
+  });
+
+  // 더보기 클릭 이벤트
+  loadMoreButton.addEventListener('click', () => {
+    renderList();
+  });
+
+
+  const dialogEvnetHandler = (e) => {
     const dialog = new Dialog();
-    const dialogOpenButtons = document.querySelectorAll('.reference--list--item');
-    dialogOpenButtons.forEach((item) => {
+    const dialogOpenButton = document.querySelectorAll('.reference--list--item');
+    dialogOpenButton.forEach((item) => {
       const { name, date, link, description, dialogThumbnail, category } = item.dataset;
-      item.addEventListener('click', () => {
-        if (!name) return;
+      item.addEventListener('click', (e) => {
+        const target = e.currentTarget;
+        if(!target) return;
         dialog.open({
-          closeIcon: icons.close,
-          name,
-          date,
-          link,
-          description,
+          closeIcon:icons.close,
+          name: name,
+          date:date,
+          link: link,
+          description: description,
           arrow: icons.arrow,
-          category,
-          dialogThumbnail,
+          category:category,
+          dialogThumbnail: dialogThumbnail,
         });
       });
-    });
-  };
+    })
+  }
 
   const init = () => {
     Tab(referenceTabs, {
@@ -158,24 +172,12 @@ const Reference = async () => {
       tabClass: 'reference--tab',
     });
     dialogEvnetHandler();
-  };
+  }
 
-  filterProjects('전체');
-
-  referenceTabs.addEventListener('click', (e) => {
-    const tab = e.target.closest('.reference--tab');
-    if (!tab) return;
-    const selectedYear = tab.dataset.year;
-    filterProjects(selectedYear);
-    dialogEvnetHandler();
-  });
-
-  loadMoreButton.addEventListener('click', () => {
-    renderList();
-    dialogEvnetHandler(); // in case new items need event binding
-  });
 
   init();
+
+
 };
 
 export default Reference;

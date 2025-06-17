@@ -14,6 +14,11 @@ export default class Dialog{
     category,
     dialogThumbnail,
   }){
+
+    if(!this.dialog){
+      return;
+    }
+
     console.log("category", category);
     const template =/* html */ `
       <form method="dialog" class="dialog--content">

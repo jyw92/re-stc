@@ -11,7 +11,7 @@ const Tab = (target, options = {}) => {
      tabwrap:target,
      tabs:target.querySelectorAll(`.${tabClass}`),
   }
-
+  
   const { tabwrap, tabs } = DOM;
 
   if (!tabwrap) {
