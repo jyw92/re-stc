@@ -4,6 +4,7 @@
   @include flexControl($direction: row, $align: center, $justify: center);
   gap: 10px;
   margin-top: rem(50);
+  margin-bottom: rem(50);
   gap: rem(50);
   width: 100%;
   overflow: hidden;

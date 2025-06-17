@@ -4,6 +4,7 @@
   // margin-block:rem(65) rem(130);
   // padding-block-start:rem(55);
   
+  
   &--tabs{
     @include flexControl($align: center, $justify: center);
     color: #999;
