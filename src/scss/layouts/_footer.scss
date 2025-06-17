@@ -3,7 +3,7 @@
 footer {
   width: 100vw;
   height: rem(400);
-  background-color: #2b4793;
+  background-color: #010112;
   color: #fff;
   .footer__inner {
     display: flex;
@@ -39,7 +39,7 @@ footer {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       .footer--logo {
         text-align: right;
       }

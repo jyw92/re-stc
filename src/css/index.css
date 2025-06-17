@@ -532,6 +532,8 @@
   }
   html {
     font-size: 62.5%;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
   body {
     font-size: 1rem;
@@ -547,7 +549,7 @@
 footer {
   width: 100vw;
   height: 40rem;
-  background-color: #2b4793;
+  background-color: #010112;
   color: #fff;
 }
 footer .footer__inner {
@@ -583,7 +585,7 @@ footer .footer__inner .footer--area--right {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 footer .footer__inner .footer--area--right .footer--logo {
   text-align: right;
@@ -985,10 +987,6 @@ dialog .dialog--content--right .dialog--content--body .td--name.link {
   border-radius: 1.5rem;
 }
 
-body {
-  margin: 0 auto;
-}
-
 .about--hero {
   margin-block: 5rem;
   position: relative;
@@ -1008,6 +1006,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 8.2rem;
+  text-shadow: 4px 4px 4px #000;
 }
 .about--hero img {
   width: 100%;
